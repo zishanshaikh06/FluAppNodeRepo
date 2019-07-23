@@ -9,7 +9,11 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var questionsRouter = require('./routes/questions');
 
+const port = 3000;
+
 var app = express();
+
+app.listen(port, () => console.log(`Flu app listening on port ${port}!`))
 
 app.use(cors());
 app.use(express.json());
